@@ -73,7 +73,7 @@ const myChart = new Chart(ctx, {
         labels: ['Belajar', 'Main', 'Tidur'],
         datasets: [{
             label: 'Aktivitas Jam Harian',
-            data: [4, 7, 9],
+            data: [5, 7, 9],
             backgroundColor: [
                 'rgba(255, 154, 158, 0.2)',
                 'rgba(254, 207, 239, 0.2)',
