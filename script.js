@@ -104,7 +104,7 @@ const skillChart = new Chart(skillCtx, {
         labels: ['JavaScript', 'Python', 'HTML & CSS', 'Java', 'PHP'],
         datasets: [{
             label: 'Tingkat Keahlian (%)',
-            data: [85, 45, 90, 60, 50],
+            data: [30, 45, 70, 25, 20],
             backgroundColor: [
                 'rgba(255, 154, 158, 0.6)',
                 'rgba(254, 207, 239, 0.6)',
