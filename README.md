@@ -1,1 +1,1 @@
-# syaaikoo.github.io
+# syaaikoo.//github.io
