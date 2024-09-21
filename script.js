@@ -6,7 +6,7 @@ const images = [
     { src: 'foto4.jpg' },
     { src: 'foto5.jpg' },
     { src: 'foto6.jpg' },
-    { src: 'foto7.jpg' },
+    { src: 'foto10.jpg' },
     { src: 'foto9.jpg' },
     { src: 'foto10.jpg' },
 ];
