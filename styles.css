@@ -1,0 +1,241 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #e8f0fe;
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Tentang Diri */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Galeri Slider */
+.gallery {
+    overflow: hidden;
+    text-align: center;
+}
+
+.gallery-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    margin: 0 5px;
+    object-fit: cover;
+}
+
+/* Tombol */
+.button {
+    padding: 10px 20px;
+    background-color: #ff9a9e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #fecfef;
+    transform: scale(1.05);
+}
+
+/* Chart Title */
+.chart-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Sosial Share */
+.social-share {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.social-button {
+    padding: 10px 15px;
+    background-color: #fecfef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-button:hover {
+    background-color: #8b9dc3;
+}
+
+/* Responsivitas */
+@media (max-width: 600px) {
+    .gallery img {
+        width: 150px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+}
+
+/* Anime Favorit */
+.anime-favorites {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.anime-item {
+    margin: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.anime-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.anime-item h4 {
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+.anime-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Bagian Skill Bahasa Pemrograman */
+.skill-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.skill-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Grafik Keahlian */
+#skillChart {
+    margin: auto;
+    display: block;
+    max-width: 600px;
+    height: auto;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff9a9e;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.notification.visible {
+    opacity: 1;
+}
+
+.notification.hidden {
+    display: none;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.dark-mode-toggle img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s ease;
+}
+
+.dark-mode-toggle:hover img {
+    transform: scale(1.1);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+body.dark-mode header {
+    background: linear-gradient(135deg, #444, #555);
+}
+
+body.dark-mode .about, 
+body.dark-mode .anime-favorites, 
+body.dark-mode .skill-container {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+body.dark-mode .social-button {
+    background-color: #555;
+}
+
+body.dark-mode .button {
+    background-color: #555;
+    color: #f0f0f0;
+}
+
+body.dark-mode .button:hover {
+    background-color: #666;
+}

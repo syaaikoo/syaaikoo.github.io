@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Dark Mode Button -->
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <img src="moon-icon.png" alt="Toggle Dark Mode" id="darkModeIcon">
+    </button>
+
+    <header>
+        <h1>Hallooo minaa saannn~</h1>
+        <p>my introduction</p>
+    </header>
+
+    <section class="about">
+        <h2>Airaa Cheisyaa</h2>
+        <p>Halloww semuanya, kenalin aku Aira Cheisya, atau biasa orang panggil Assyaa...</p>
+        <button class="button" onclick="showMore()"><h1>Foto foto ku :></h1>
+        <p>(kalau ada waktu luang ku tambahin)</p></button>
+    </section>
+
+    <section id="gallery" class="gallery" style="display: none;">
+        <div class="gallery-wrapper">
+            <!-- Images will be dynamically added here by JavaScript -->
+        </div>
+        <button class="button" onclick="prevSlide()">&#10094;</button>
+        <button class="button" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <section class="chart-container">
+        <h3 class="chart-title">Aktivitas Saya</h3>
+        <canvas id="myChart" width="400" height="200"></canvas>
+    </section>
+
+    <section class="anime-favorites">
+        <h3>Anime Favorit Saya</h3>
+        <div class="anime-list">
+            <div class="anime-item">
+                <img src="yourname.jpg" alt="Anime 1">
+                <h4>Your Name</h4>
+                <p>Genre: Romance, Mysteri, Drama.</p>
+            </div>
+            <div class="anime-item">
+                <img src="IMG_20240919_202508.jpg" alt="Anime 2">
+                <h4>Roshidere</h4>
+                <p>Genre: Romance, Comedy, School.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian baru: Grafik Keahlian Bahasa Pemrograman -->
+    <section class="skill-container">
+        <h3 class="skill-title">Keahlian Bahasa Pemrogramanku</h3>
+        <canvas id="skillChart" width="400" height="200"></canvas>
+    </section>
+
+    <section class="social-share">
+        <h3>Media Sosial Saya:</h3>
+        <button class="social-button" onclick="shareOnSocial('instagram')">Instagram</button>
+        <button class="social-button" onclick="shareOnSocial('whatsapp')">WhatsApp</button>
+    </section>
+
+    <div id="notification" class="notification hidden">
+        <p id="notificationSender"></p>
+        <p id="notificationMessage"></p>
+        <button onclick="hideNotification()">Tutup</button>
+    </div>
+
+    <footer>
+        <p>© 2024 Syaaikoo - Dibuat dengan hati dan passion untuk teknologi.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
